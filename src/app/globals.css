@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-3xs: 20rem;
+  --breakpoint-2xs: 30rem;
+  --breakpoint-xs: 35rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 55rem;
+  --breakpoint-xl: 60rem;
+  --breakpoint-2xl: 75rem;
+}
+
+:root {
+  --primary: #2962ff;
+  --secondary: #0d47a1;
+  --screenBlack: #0d0d0d;
+  --screenWhite: #fdfdfd;
+  --screenGrey: #141414;
+  --error: #ff1744;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-screenBlack: var(--screenBlack);
+  --color-screenWhite: var(--screenWhite);
+  --color-screenGrey: var(--screenGrey);
+  --color-error: var(--error);
+  --font-body: var(--font-geist-sans);
+  --font-title: var(--font-geist-sans);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--screenWhite);
+  color: var(--screenBlack);
+}
