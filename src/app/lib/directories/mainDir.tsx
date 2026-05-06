@@ -1,4 +1,6 @@
-export const mainDir = {
+import type { MainDirectory } from '@/app/lib/definitions';
+
+export const mainDir: MainDirectory = {
     id: 'main',
     title: 'Main',
     pageDir: [
@@ -15,8 +17,6 @@ export const mainDir = {
                         {
                             id: 'doctype', 
                             title: "<!DOCTYPE>",
-                            code: '',
-                            table: '',
                             cellDir: [
                                 {text: `All HTML documents must start with a <!DOCTYPE> declaration.`},
                                 {text: `The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.`},
@@ -19921,8 +19921,7 @@ export const mainDir = {
                             ]
                         },
                         {
-                            id: 'storageEvent',
-                            id: 'storageEventPandM', 
+                            id: 'storageEventPandM',
                             title: 'Properties and Methods',
                             headCellDir: []
                         }, 

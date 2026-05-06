@@ -2,11 +2,11 @@
 
 import { useMediaQuery } from '@mui/material';
 import { mainDir } from '@/app/lib/directories/mainDir';
-import Nav from './Nav';
-import PageNav from './PageNav';
-import PageContent from './PageContent';
+import Nav from '@/app/(content)/_components/ReferencePage/Nav';
+import PageNav from '@/app/(content)/_components/ReferencePage/PageNav';
+import PageContent from '@/app/(content)/_components/ReferencePage/PageContent';
 
-export default function ReferencePage({ pageDirIndex }) {
+export default function ReferencePage({ pageDirIndex }: { pageDirIndex: number }) {
   const mobile = useMediaQuery('(min-width:1000px)');
 
   return (
