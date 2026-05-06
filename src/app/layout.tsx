@@ -1,7 +1,9 @@
+import type { Metadata, Viewport } from 'next';
+import type { ReactNode } from 'react';
 import './globals.css';
 import { geistSans, geistMono } from '@/app/lib/fonts';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Front End Basics',
   description:
     'Resource site for HTML, CSS, JavaScript, and HTML DOM with quick references and examples.',
@@ -14,15 +16,17 @@ export const metadata = {
   },
 };
 
-export const viewport = {
+export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-screenWhite font-body`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-screenWhite font-body`}
+      >
         {children}
       </body>
     </html>
